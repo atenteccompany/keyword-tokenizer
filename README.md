@@ -35,6 +35,7 @@ console.log(t.create(input));
 - get all values from json (including nested values)
 - separate numbers and strings
 - keep only alphanumeric characters in strings
+- convert all strings to lowercase
 - split strings with space as a separator
 - remove strings have length <= 2
 - remove repeated numbers and strings

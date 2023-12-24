@@ -5,7 +5,7 @@ import { Tokens } from './dto/token.dto';
 export class TokenizeService {
   private filterTokens(tokens: string[]): string[] {
     const specialCharsPattern = new RegExp('[^a-zA-Z0-9]', 'g');
-    tokens = tokens.map((token) => token.replace(specialCharsPattern, ''));
+    tokens = tokens.map((token) => token.replace(specialCharsPattern, '').toLowerCase());
 
     return tokens.filter((token) => token.length > 2);
   }
