@@ -29,9 +29,9 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/atenteccompany/keyword-tokenizer"
   },
-  "bugs": "",
+  "bugs": "https://github.com/atenteccompany/keyword-tokenizer/issues",
   "peerDependencies": {
     "@nestjs/common": "^6.0.0"
   },
