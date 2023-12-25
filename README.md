@@ -40,6 +40,6 @@ console.log(t.create(input));
 - keep only alphanumeric characters in strings
 - convert all strings to lowercase
 - split strings with space as a separator
-- remove strings have length <= 2
+- remove strings have length <= 2 or > 20
 - remove repeated numbers and strings
 - ignore null, undefined values
