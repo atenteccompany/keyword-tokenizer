@@ -42,4 +42,4 @@ console.log(t.create(input));
 - split strings with space as a separator
 - remove strings have length <= 2
 - remove repeated numbers and strings
-- ignore null values
+- ignore null, undefined values

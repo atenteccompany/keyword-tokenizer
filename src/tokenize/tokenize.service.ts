@@ -7,7 +7,7 @@ export class TokenizeService {
     const specialCharsPattern = new RegExp('[^a-zA-Z0-9]', 'g');
     tokens = tokens.map((token) => token.replace(specialCharsPattern, '').toLowerCase());
 
-    return tokens.filter((token) => token.length > 2);
+    return tokens.filter((token) => token.length > 2 && token.length <= 20);
   }
 
   private getValues(obj: any, result: Tokens) {
