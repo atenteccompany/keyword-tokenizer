@@ -11,7 +11,7 @@ export class TokenizeService {
   }
 
   private getValues(obj: any, result: Tokens) {
-    if (obj === null) {
+    if (obj === null || obj === undefined || Number.isNaN(obj)) {
       return;
     }
 

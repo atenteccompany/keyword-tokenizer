@@ -29,7 +29,7 @@ const t: TokenizeService = new TokenizeService();
 console.log(t.create(input));
 /**
  * output: 
- * { strings: [ 'atentec' ], numbers: [1007] }
+ * { strings: [ 'atentec' ], numbers: [10007] }
 */
 ```
 
