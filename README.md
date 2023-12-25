@@ -3,14 +3,17 @@
 Tokenize json, get all values from json (including nested values).
 
 ## Usage
-- add `.npmrc` to root directory with this content
+- generate PAT(personal access token) with `read:packages` permission from [github](https://github.com/settings/tokens)
+
+- add `.npmrc` to root directory with given content below and replace `YOUR_PAT_HERE` with the PAT you just generated
 ```
 @atenteccompany:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=YOUR_PAT_HERE
 ```
 
 - install package
 ```bash
-npm install @atenteccompany/keyword-tokenizer@1.0.0`
+npm install @atenteccompany/keyword-tokenizer
 ```
 
 - example
@@ -19,7 +22,7 @@ import { TokenizeService } from '@atenteccompany/keyword-tokenizer/dist'
 
 const input = {
     "key": "atentec",
-    "key2": 1007
+    "key2": 10007
 }
 
 const t: TokenizeService = new TokenizeService();
